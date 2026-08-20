@@ -1,26 +1,26 @@
 class RampCli < Formula
   desc "CLI for Ramp's Developer API"
   homepage "https://github.com/ramp-public/ramp-cli"
-  version "0.2.22"
+  version "0.2.27"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ramp-public/ramp-cli/releases/download/v#{version}/ramp-darwin-arm64.tar.gz"
-      sha256 "55910c4c21d0dde1e6b7579215efd7f0467b392613adf69f4c281e0cba74c799"
+      sha256 "59951463c17e1dacdaf4b96f2e432410fe2d8b83c03da98b5f2f5d4e79e366d3"
     else
       url "https://github.com/ramp-public/ramp-cli/releases/download/v#{version}/ramp-darwin-amd64.tar.gz"
-      sha256 "05df960921f6d175c270ba52d80471934100e7a8b16379389949df6d6610e221"
+      sha256 "d24680195c8cc56eb45efe0310d39e021f23d4af5c0eb60b0a4465f70f6cb55b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ramp-public/ramp-cli/releases/download/v#{version}/ramp-linux-arm64.tar.gz"
-      sha256 "dcf4433ecb17217157f4fba14b21108d53dba9c38dd7d78af8db0e95e7a25d9e"
+      sha256 "4f91ce66724a039b5c4ba9f3135bd475a65c1dd64ac641d39adb765e7261774a"
     else
       url "https://github.com/ramp-public/ramp-cli/releases/download/v#{version}/ramp-linux-amd64.tar.gz"
-      sha256 "5e74bb41fe50603da863dc9bfa40e832f34f83595548ab23916a9d65a91528f1"
+      sha256 "c5c7086cb5dd0c03e65854730ff7c60b80a8f3d8af828ebcf75fd0f191b92757"
     end
   end
 
